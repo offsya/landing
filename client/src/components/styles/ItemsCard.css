@@ -1,0 +1,65 @@
+.itemCard{
+    height: 272px;
+    width: auto;
+    max-width: 240px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    margin-top: 18px;
+    margin-bottom: 26px;
+}
+.imgCard{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    top: -20px
+}
+.priceCard{
+    position: relative;
+    bottom: -18px;
+    margin: 0 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.nameCard{
+    margin-left: 24px;
+    font-size: 18px;
+    position: relative;
+    top: -30px;
+    font-weight: 600;
+}
+
+.buttonMore{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 32px;
+    background: #9DC55F;
+    bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.middlePrice{
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4C4C4C;
+    bottom: 18px;
+}
+
+.middlePriceCurrent{
+    position: relative;
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    bottom: 20px
+}
+.middlePriceCurrentKg{
+    font-size: 16px;
+    font-weight: 600;
+}

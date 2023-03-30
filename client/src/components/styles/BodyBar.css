@@ -1,0 +1,29 @@
+.bodyBar{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.menuBar{
+    width: 242px;
+    margin-top: 188px;
+    margin-left: 57px;
+    margin-right: 32px;
+}
+
+.menuButton{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    width: 240px;
+    height: 75px;
+    text-align: center;
+    background: #E8E8E8;
+    margin-bottom: 23px;
+    font-size: 20px;
+    font-weight: 700;
+}

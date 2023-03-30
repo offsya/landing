@@ -1,0 +1,63 @@
+.cardElem{
+    background: #FFFFFF;
+    height: 150px;
+}
+
+.imgCardElem{
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    margin-left: -15px;
+}
+
+.cardElemName{
+    text-align: center;
+    position: relative;
+    top: -110px;
+    left: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardElemMiddlePrice{
+    position: relative;
+    text-align: center;
+    top: -94px;
+    font-size: 16px;
+    left: 2px;
+}
+
+.cardElemPrice{
+    position: relative;
+    top: -95px;
+    text-align: center;
+    font-size: 26px;
+    left: -14px;
+    font-weight: bold;
+}
+
+.cardElemChange{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -135px;
+    width: 85px;
+    height: 29px;
+    float: right;
+    margin-right: 12px;
+    font-size: 20px;
+    background: #DDDDDD;
+    border-radius: 32px;
+}
+
+.cardElemDeleteImg{
+    position: relative;
+    top: 35px;
+    right: -295px;
+    background: url("../images/closeButton.svg");
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
