@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+.logo{
+    background: url("../images/logo.svg");
+    background-size: cover;
+    width: 60px;
+    margin-left: 48px;
+    margin-top: 0px;
+}
+.logoText{
+    font-family: 'Inspiration';
+    position: relative;
+    left: 50px;
+    top: 45px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #5FC56E;
+    width: 400px;
+}
+
+.bodyBarSearch{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    background: #FFFFFF;
+    height: 77px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.search{
+    width: 422px;
+    height: 40px;
+    margin-left: 150px;
+}
+
+.searchInput{
+    width: 422px;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 32px;
+    border: 1px solid #DCDCDC;
+    text-align: left;
+    padding-left: 26px;
+    background: #FFFFFF;
+    color: #C2C2C2;
+    letter-spacing: 0.1em;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.searchInput::placeholder{
+    color: #C2C2C2;
+    letter-spacing: 0.1em;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.searchInput:focus{
+    border-radius: 32px;
+    border: 1px solid #DCDCDC;
+    outline: none;
+}
+
+.searchIcon{
+    background: url("../images/searchIcon.svg");
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    position: relative;
+    top: -33px;
+    right: 15px;
+    float: right;
+}

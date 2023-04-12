@@ -1,5 +1,5 @@
 import SearchBar from "./components/SearchBar";
-import './styles/App.css'
+import './styles/App.scss'
 import BodyBar from "./components/BodyBar";
 
 function App() {

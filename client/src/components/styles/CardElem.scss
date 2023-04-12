@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400;500&display=swap');
+
+.cardElem{
+    background: #FFFFFF;
+    height: 105px;
+    padding-top: 30px;
+}
+
+.imgCardElem{
+    box-sizing: border-box;
+    position: relative;
+    top: -40px;
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    left: 30px;
+
+}
+
+.cardElemName{
+    position: relative;
+    display: inline;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    left: 115px;
+    top: -120px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.cardElemMiddlePrice{
+    font-family: 'Roboto';
+    position: relative;
+    text-align: center;
+    top: -120px;
+    font-size: 14px;
+    left: 14px;
+}
+
+.cardElemPrice{
+    font-family: 'Roboto';
+    position: relative;
+    top: -100px;
+    text-align: center;
+    font-size: 26px;
+    left: -5px;
+    font-weight: 550;
+}
+
+.cardElemChange{
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #4C4C4C;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -135px;
+    width: 66px;
+    height: 21px;
+    float: right;
+    margin-right: 12px;
+    font-size: 14px;
+    background: #F5F5F5;
+    border-radius: 32px;
+}
+
+.cardElemDeleteImg{
+    position: relative;
+    top: -22px;
+    right: -270px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4C4C4C;
+}
+
+
+.cardElemBottomSpace{
+    position: relative;
+    top: -95px;
+    height: 0.37px;
+    width: 100%;
+    background: #E8E8E8;
+}

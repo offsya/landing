@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/BodyBar.css'
+import './styles/BodyBar.scss'
 import {Col, Row} from "antd";
 import MenuBar from "./MenuBar";
 import MainBar from "./MainBar";
@@ -7,10 +7,10 @@ import MainBar from "./MainBar";
 const BodyBar = () => {
     return (
         <div className='bodyBar'>
-            <div flex={1}>
+            <div>
                 <MenuBar/>
             </div>
-            <div flex={1}>
+            <div>
                 <MainBar/>
             </div>
         </div>

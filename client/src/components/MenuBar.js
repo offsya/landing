@@ -1,14 +1,15 @@
-import React from 'react';
-import './styles/BodyBar.css'
+import React, {useState} from 'react';
+import './styles/BodyBar.scss'
 import MenuButton from "./MenuButton";
 
 const MenuBar = () => {
     return (
         <div className='menuBar'>
-            <MenuButton title="Home"/>
-            <MenuButton title="Catalog"/>
-            <MenuButton title="Category"/>
-            <MenuButton title="Language"/>
+            <div className='calend'></div>
+            <MenuButton title="Home" icon={1}/>
+            <MenuButton title="Catalog" icon={2}/>
+            <MenuButton title="Category" icon={3}/>
+            <MenuButton title="Language" icon={4}/>
         </div>
     );
 };

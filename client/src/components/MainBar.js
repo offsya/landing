@@ -1,27 +1,22 @@
 import React from 'react';
-import './styles/MainBar.css'
-import {Col, Row} from "antd";
+import './styles/MainBar.scss'
 import ItemsCard from "./ItemsCard";
-import Card from "./Card";
+import tomato from './images/tomato.svg'
+import corn from './images/corn.svg'
+import chili from './images/chili.svg'
+import avocado from './images/avocado.svg'
+import Cart from "./Cart";
 
 const MainBar = () => {
     return (
         <div className='mainBar'>
             <div className='infoLine'>
-                All Items
+                Catalog
             </div>
             <div className='itemCardBar'>
-                <div className='itemsCard'>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                    <ItemsCard/>
-                </div>
-                <div>
-                    <Card/>
+                <ItemsCard/>
+                <div className='itemsCart'>
+                    <Cart/>
                 </div>
          </div>
         </div>

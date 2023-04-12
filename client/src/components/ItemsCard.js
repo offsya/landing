@@ -1,20 +1,34 @@
-import React from 'react';
-import './styles/ItemsCard.css'
-import tomato from './images/tomato.svg'
+import React, {useMemo} from 'react';
+import Item from "./Item";
+import {useSelector} from "react-redux";
+
+
 
 const ItemsCard = () => {
+    const allItems = useSelector((state) => state.allItems.setAllItems)
+    const search = useSelector((state) => state.search.search)
+
+    const allItemsSearch = useMemo(() => {
+        if(search !== ''){
+            return allItems.filter((elem) => {
+                try{
+                    return elem.name.toLowerCase().includes(search.toLowerCase())
+                }catch (e) {
+                    return false
+                }
+            })
+        }else{
+            return allItems
+        }
+    }, [search, allItems])
+
     return (
-        <div className="itemCard">
-            <div><img className='imgCard' src={tomato} alt="tomato"/></div>
-            <div>
-                <div className='nameCard'>Tomato</div>
-                <div className='priceCard'>
-                    <div>
-                        <div className='middlePrice'>middle price</div>
-                        <div className='middlePriceCurrent'>3.65<span className='middlePriceCurrentKg'>€/kg</span></div>
-                    </div>
-                <div className='buttonMore'>more...</div></div>
-            </div>
+        <div className='itemsCard'>
+                {
+                    allItemsSearch.map(elem => {
+                                return <Item elem={elem}/>
+                        })
+                }
         </div>
     );
 };

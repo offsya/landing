@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400;500&display=swap');
+.itemCard{
+    height: 206px;
+    width: auto;
+    max-width: 190px;
+    min-width: 190px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+    margin-top: 18px;
+    margin-bottom: 26px;
+    margin-right: 10px;
+}
+
+.imgCardBackground{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .imgCard{
+        background-size: cover;
+        background-position: center;
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+}
+
+.priceCard{
+    position: relative;
+    bottom: -18px;
+    margin: 0 18px 0 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.nameCard{
+    font-family: 'Roboto';
+    margin-left: 15px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    position: relative;
+    top: 0px;
+    font-weight: 550;
+}
+
+.buttonMore{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    background: #5FC56E;
+    left: 5px;
+    top: 8px;
+    .buttonMoreIcon{
+        font-weight: 700;
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+}
+
+.middlePrice{
+    font-family: 'Montserrat';
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4C4C4C;
+    bottom: 18px;
+    letter-spacing: 0em;
+}
+
+.middlePriceCurrent{
+    font-family: 'Montserrat';
+    font-style: normal;
+    position: relative;
+    font-size: 26px;
+    color: black;
+    margin-top: 8px;
+    bottom: 20px;
+    font-weight: 400;
+}
+.middlePriceCurrentKg{
+    font-size: 16px;
+    font-weight: 600;
+}

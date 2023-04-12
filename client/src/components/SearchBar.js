@@ -1,19 +1,16 @@
 import React from 'react';
-import './styles/SearchBar.css'
+import './styles/SearchBar.scss'
 import { Col, Row } from 'antd';
 import Search from "./Search";
 
 const SearchBar = () => {
     return (
-        <Row>
-            <Col flex={1}>
-                <div className="logo">
-                </div>
-            </Col>
-            <Col flex={20}>
-                <Search/>
-            </Col>
-        </Row>
+        <div className='bodyBarSearch'>
+            <div className="logo">
+                <div className="logoText">Tu Producto Online</div>
+            </div>
+            <Search/>
+        </div>
     );
 };
 

@@ -1,0 +1,48 @@
+/* Reset and base styles  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@400;500&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.App{
+}
+
+body{
+    font-family: 'Montserrat Alternates';
+    letter-spacing: 0.1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #DDDDDD; /* Цвет полосы */
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1400px){
+    body{
+        max-width: 1400px;
+    }
+}
+@media (max-width: 800px){
+    body{
+        transform: scale(0.1);
+    }
+}
