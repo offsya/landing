@@ -1,0 +1,196 @@
+.modal{
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .profitModal{
+    height: 475px;
+    width: 775px;
+    background: #FFFFFF;
+    padding-left: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+  }
+}
+
+.seeProfitText{
+  position: relative;
+  margin-top: 19px;
+  height: 31px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #000000;
+  .closeButton{
+    color: #4C4C4D;
+    font-weight: 700;
+    position: absolute;
+    top: -5px;
+    right: 25px;
+  }
+}
+
+
+.profitTable{
+  overflow: auto;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+
+.profitTable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.profitTable::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона */
+}
+
+.profitTable::-webkit-scrollbar-thumb {
+  background: #DDDDDD; /* Цвет полосы */
+  border-radius: 10px;
+}
+
+
+.profitTableElem{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.profitProductMiddle, .profitOurPrice, .profitQuantity, .profitProfit{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #4C4C4D;
+}
+
+.profitTableElemBorder{
+  border-bottom: 1px solid #9D9D9D;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  height: 76px;
+  .profitProductName{
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.profitProductMiddle{
+  width: 150px;
+}
+
+.profitOurPrice, .profitProfit{
+  color: #5FC56E;
+}
+
+
+.profitSize{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.profitProductName{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #4C4C4D;
+}
+
+.cardElemChangeProfit{
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #4C4C4C;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  top: 25px;
+  left: 20px;
+  width: 66px;
+  height: 21px;
+  float: right;
+  margin-right: 12px;
+  font-size: 14px;
+  background: #F5F5F5;
+  border-radius: 32px;
+}
+.imgCardElemProfit{
+  box-sizing: border-box;
+  position: relative;
+  top: -10px;
+  margin-right: 4px;
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+}
+
+
+.totalProfit{
+  margin: 70px 66px 0px auto;
+  width: 260px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #9D9D9D;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &Price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #5FC56E;
+    margin-bottom: -6px;
+  }
+  &Text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #4C4C4D;
+    //padding-top: 10px;
+  }
+}

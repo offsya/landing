@@ -3,12 +3,15 @@ import menuSlice from '../features/menuSlice'
 import allItemsSlice from '../features/allItems'
 import searchSlice from '../features/searchItems'
 import allItemsCartSlice from "../features/allCartItems";
+import seeOptionsSlice from "../features/seeOptions";
+
 
 export const store = configureStore({
     reducer: {
         menu: menuSlice,
         allItems: allItemsSlice,
         search: searchSlice,
-        allCartItems: allItemsCartSlice
+        allCartItems: allItemsCartSlice,
+        seeOptions: seeOptionsSlice
     },
 })

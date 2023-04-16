@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/BodyBar.scss'
 import {Col, Row} from "antd";
-import MenuBar from "./MenuBar";
+import MenuBar from "./Menu/MenuBar";
 import MainBar from "./MainBar";
 
 const BodyBar = () => {

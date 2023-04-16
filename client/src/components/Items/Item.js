@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles/ItemsCard.scss'
+import '../styles/ItemsCard.scss'
 import {HiPlus} from 'react-icons/hi'
 import {useDispatch} from "react-redux";
-import {setAllItemsCart} from "../features/allCartItems";
+import {setAllItemsCart} from "../../features/allCartItems";
 
 const Item = ({elem}) => {
     const dispatch = useDispatch()
@@ -15,9 +15,9 @@ const Item = ({elem}) => {
                 <div className='priceCard'>
                     <div>
                         <div className='middlePrice'>middle price</div>
-                        <div className='middlePriceCurrent'>{elem.price}<span className='middlePriceCurrentKg'>€/kg</span></div>
+                        <div className='middlePriceCurrent'>{elem.middlePrice}<span className='middlePriceCurrentKg'>€/{elem.unit}</span></div>
                     </div>
-                    <div className='buttonMore' onClick={() => dispatch(setAllItemsCart(elem))}><HiPlus className="buttonMoreIcon"/></div>
+                    <div className='buttonMore' onClick={() => dispatch(setAllItemsCart({...elem, quantity: 1}))}><HiPlus className="buttonMoreIcon"/></div>
                 </div>
             </div>
         </div>

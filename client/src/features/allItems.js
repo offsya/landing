@@ -5,31 +5,55 @@ import chili from "../components/images/chili.svg";
 import avocado from "../components/images/avocado.svg";
 
 const initialState = {
-    setAllItems: [ {
-        img: tomato,
-        name: 'Tomato',
-        price: 3.5,
-        quantity: 0,
-    },
+    setAllItems: [
         {
-            img: chili,
-            name: 'chili',
-            price: 3.5,
+            id: 1,
             quantity: 0,
+            img: tomato,
+            name: 'Tomato',
+            sku: 'tmt',
+            middlePrice: 3.5,
+            ourPrice: 2.5,
+            proveedorPrice: 1.5,
+            skuProveedor: 'tmtt',
+            unit: 'tara',
         },
         {
-            img: avocado,
-            name: 'avocado',
-            price: 3.5,
+            id: 2,
             quantity: 0,
-        },
-        {
             img: corn,
-            name: 'corn',
-            price: 3.5,
-            quantity: 0,
+            name: 'Corn',
+            sku: 'tmt',
+            middlePrice: 3.5,
+            ourPrice: 2.5,
+            proveedorPrice: 1.5,
+            skuProveedor: 'tmtt',
+            unit: 'tara',
         },
-
+        {
+            id: 3,
+            quantity: 0,
+            img: chili,
+            name: 'Chili',
+            sku: 'tmt',
+            middlePrice: 3.5,
+            ourPrice: 2.5,
+            proveedorPrice: 1.5,
+            skuProveedor: 'tmtt',
+            unit: 'tara',
+        },
+        {
+            id: 4,
+            quantity: 0,
+            img: avocado,
+            name: 'Avocado',
+            sku: 'tmt',
+            middlePrice: 3.5,
+            ourPrice: 2.5,
+            proveedorPrice: 1.5,
+            skuProveedor: 'tmtt',
+            unit: 'tara',
+        },
     ]
 }
 

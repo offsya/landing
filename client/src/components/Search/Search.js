@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles/SearchBar.scss'
+import '../styles/SearchBar.scss'
 import {useDispatch} from "react-redux";
-import {setSearch} from "../features/searchItems";
+import {setSearch} from "../../features/searchItems";
 
 const Search = () => {
     const dispatch = useDispatch()

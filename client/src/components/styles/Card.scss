@@ -15,6 +15,21 @@
     font-weight: 500;
 }
 
+.cardOptions{
+    display: flex;
+    font-family: 'Montserrat Alternates';
+    align-items: center;
+    width: 320px;
+    height: 64px;
+    background: #F5F4F2;
+    color: #969696;
+    border-radius: 30px;
+    padding-left: 70px;
+    margin-top: 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .cardImg{
     background-size: cover;
     height: 24px;
@@ -28,10 +43,9 @@
     width: 30px;
     position: relative;
     border-radius: 40px;
-    left: 130px;
+    left: 150px;
     bottom: 0px;
-    background: #5FC56E;
-    color: #FFFFFF;
+    color: #969696;
 }
 
 .openCardImgBackground{
@@ -56,7 +70,7 @@
     height: auto;
     position: relative;
     top: 2px;
-    min-height: 200px;
+    min-height: 400px;
     max-height: 400px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -75,7 +89,27 @@
     border-radius: 10px;
 }
 
+.openCard-mobile::-webkit-scrollbar {
+    width: 6px;
+}
 
+.openCard-mobile::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона */
+}
+
+.openCard-mobile::-webkit-scrollbar-thumb {
+    background: #DDDDDD; /* Цвет полосы */
+    border-radius: 10px;
+}
+
+.openCard-mobile{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 .seeOptionsCard{
     font-family: 'Roboto';
     position: relative;
@@ -102,4 +136,59 @@
     border-bottom-right-radius: 40px;
     display: flex;
     justify-content: center;
+}
+
+
+.seeOptionsCard-mobile{
+    font-family: 'Roboto';
+    position: relative;
+    width: 230px;
+    height: 50px;
+    border-radius: 40px;
+    background: #5FC56E;
+    font-size: 20px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+.seeOptionsCardBackground-mobile{
+    width: 100%;
+    height: 115px;
+    background: #FFFFFF;
+    display: flex;
+    position: absolute;
+    top: calc(100vh - 115px);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.seeOptionsCardTotalMoney-mobile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #4C4C4C;
+}
+
+.seeOptionsCardTotalMoneyText-mobile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #4C4C4C;
 }

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import './styles/BodyBar.scss'
+import '../styles/BodyBar.scss'
 import { BiCategoryAlt } from 'react-icons/bi';
 import { TbFilters } from 'react-icons/tb';
 import { TbHome } from 'react-icons/tb';
 import { MdLanguage } from 'react-icons/md';
 import {useDispatch, useSelector} from "react-redux";
-import {setCurrentMenuButton} from "../features/menuSlice";
+import {setCurrentMenuButton} from "../../features/menuSlice";
 
 const MenuButton = ({title, icon}) => {
     const dispatch = useDispatch()
@@ -18,8 +18,8 @@ const MenuButton = ({title, icon}) => {
     }
     return (
         <div>
-            <button onClick={() => dispatch(setCurrentMenuButton(icon))} className="menuButton" style={{background: current == icon ? 'linear-gradient(274.75deg, #D0EDD4 -10.36%, #5FC56E 47.35%)' : 'linear-gradient(274.75deg, #EDEDED 13.53%, #DADADA 98.06%)', color: current == icon ? '#FFFFFF' : '#4C4C4C'}}>
-                <div style={{background: current == icon ? "#5FC56E" : "#DADADA", color: current == icon ? '#FFFFFF' : '#5FC56E'}} className="currentMenuIconBackground">
+            <button onClick={() => dispatch(setCurrentMenuButton(icon))} className="menuButton" style={{background: current == icon ? '#FFFFFF' : '#FFFFFF', color: current == icon ? '#5FC56E' : '#4C4C4C'}}>
+                <div>
                     {
                         currentIcon()
                     }
